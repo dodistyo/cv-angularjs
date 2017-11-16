@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2017 at 06:41 AM
+-- Generation Time: Nov 16, 2017 at 03:52 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -37,7 +37,7 @@ CREATE TABLE `bio` (
 --
 
 INSERT INTO `bio` (`id`, `person_id`, `bio`) VALUES
-(1, 1, 'Hello! I’m Dodi Prasetyo. I\'m a simple ordinary man that love to code and anything about technology. I really want to become a Profesional someday. With all the skills i have now, i hope i could learn more and more about this field to gain expertise. For me it\'s really important to understand the fundamental things, because if we understand the basic it will build strong foundation for us to go forward. i also really like to meet new people and enjoy small talk.');
+(1, 1, 'Hello! I’m Dodi Prasetyo. I\'m a simple ordinary man that love to code and anything about technology. I really want to become a Profesional someday. With all the skills i have now, i hope i could learn more and more in order to gain expertise. For me it\'s really important to understand the fundamental things, because if we understand the basic it will build strong foundation for us to go forward. i also really like to meet new people and try a new thing. I\'m open minded');
 
 -- --------------------------------------------------------
 
@@ -136,22 +136,25 @@ INSERT INTO `skills` (`id`, `person_id`, `name`, `parent_id`, `grade`, `img`) VA
 (1, 1, 'Profesional', 0, 90, ''),
 (2, 1, 'Personal', 0, 88, ''),
 (3, 1, 'Software', 0, 85, ''),
-(4, 1, 'Programming', 1, 88, ''),
-(5, 1, 'Networking', 1, 85, ''),
-(6, 1, 'System Administrator', 1, 86, ''),
+(4, 1, 'Programming', 1, 87, ''),
+(5, 1, 'Networking', 1, 78, ''),
+(6, 1, 'System Administrator', 1, 82, ''),
 (7, 1, 'Comunication', 2, 84, ''),
 (8, 1, 'Creativity', 2, 82, ''),
 (9, 1, 'Teamwork', 2, 90, ''),
-(10, 1, 'Leadership', 2, 80, ''),
-(11, 1, 'Codeigniter', 4, 86, ''),
-(12, 1, 'Laravel', 4, 85, ''),
+(10, 1, 'Leadership', 2, 72, ''),
+(11, 1, 'Codeigniter', 4, 82, ''),
+(12, 1, 'Laravel', 4, 80, ''),
 (13, 1, 'AngularJS', 4, 78, ''),
-(14, 1, 'Routing', 5, 80, ''),
-(15, 1, 'Switching', 5, 78, ''),
-(16, 1, 'PHP Storm', 3, 87, ''),
-(17, 1, 'Git', 3, 88, ''),
-(18, 1, 'CentOS', 6, 86, ''),
-(19, 1, 'Debian', 6, 87, '');
+(14, 1, 'Routing', 5, 75, ''),
+(15, 1, 'Switching', 5, 75, ''),
+(16, 1, 'PHP Storm', 3, 84, ''),
+(17, 1, 'Git', 3, 86, ''),
+(18, 1, 'CentOS', 6, 83, ''),
+(19, 1, 'Debian', 6, 85, ''),
+(20, 1, 'Microsoft Office', 3, 75, ''),
+(21, 1, 'Photoshop', 3, 67, ''),
+(22, 1, 'Computer And Hardware', 1, 78, '');
 
 -- --------------------------------------------------------
 
@@ -277,7 +280,7 @@ ALTER TABLE `person`
 -- AUTO_INCREMENT for table `skills`
 --
 ALTER TABLE `skills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `social_media`
 --
