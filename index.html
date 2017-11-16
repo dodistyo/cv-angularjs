@@ -266,10 +266,12 @@
                                     <h6 class="text-center">{{ skills.name }}</h6>
                                 </div>
                                 <!-- FIRST SKILL BAR -->
-                                <div class="skillbar" ng-repeat="type in skills.arrChilds" data-percent="{{ type.grade }}">
-                                    <div class="skillbar-title"><span>{{ type.name }}</span></div>
-                                    <div class="skillbar-bar"></div>
-                                    <div class="skill-bar-percent">{{ type.grade }}%</div>
+                                <div ng-repeat="type in skills.arrChilds">
+                                    <div class="skillbar" data-percent="{{ type.grade }}%">
+                                        <div class="skillbar-title"><span>{{ type.name }}</span></div>
+                                        <div class="skillbar-bar" style="width: {{ type.grade }}%;" ></div>
+                                        <div class="skill-bar-percent">{{ type.grade }}%</div>
+                                    </div>
                                 </div>
                                 <!--&lt;!&ndash; SECOND SKILL BAR  &ndash;&gt;-->
                                 <!--<div class="skillbar" data-percent="90%">-->
